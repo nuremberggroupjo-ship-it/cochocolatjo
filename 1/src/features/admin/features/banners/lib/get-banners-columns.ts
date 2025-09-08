@@ -4,7 +4,7 @@ import { type Dispatch, type SetStateAction } from "react"
 
 import { type ColumnDef } from "@tanstack/react-table"
 
-import { Banner } from "@/lib/_generated/prisma"
+import { Banner } from "@prisma/client"
 
 import {
   actionsColumn,

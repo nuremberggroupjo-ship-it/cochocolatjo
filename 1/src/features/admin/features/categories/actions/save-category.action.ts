@@ -7,7 +7,7 @@ import { z } from "zod"
 
 import { getCategoryBySlugAdmin } from "@/data"
 
-import { Category } from "@/lib/_generated/prisma"
+import { Category } from "@prisma/client"
 import { verifySession } from "@/lib/dal"
 import prisma from "@/lib/prisma"
 import { actionClient } from "@/lib/safe-action"

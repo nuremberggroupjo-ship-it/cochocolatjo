@@ -50,7 +50,7 @@ export async function generateMetadata({
       name: product.name,
       description: product.description || undefined,
       slug: product.slug,
-      images: product.productImages?.map((img) => img.imageUrl),
+      images: product.productImages?.map((img: typeof product.productImages[0]) => img.imageUrl),
     }),
   )
 }

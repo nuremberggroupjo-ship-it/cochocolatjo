@@ -50,7 +50,7 @@ export async function GET(
       WHERE schemaname = 'public'
     `
     // Convert to simple array of table names
-    const availableTables = tableNames.map((row) => row.tablename)
+    const availableTables = tableNames.map((row: { tablename: string }) => row.tablename)
 
     // Check if the provided table name exists in the list of table names
     if (!availableTables.includes(table)) {

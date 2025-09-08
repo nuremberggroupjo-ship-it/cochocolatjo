@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form"
 
 import { ChangeEventInputType } from "@/types"
 
-import { Attribute, Category } from "@/lib/_generated/prisma"
+import { Attribute, Category } from "@prisma/client"
 import { slugify } from "@/lib/utils"
 
 import { DIALOG_TEXTS } from "@/constants"

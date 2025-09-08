@@ -5,7 +5,7 @@ import type { UserAdminData } from "@/types/db"
 
 import { getUsersAdminWithCount } from "@/data"
 
-import type { Prisma } from "@/lib/_generated/prisma"
+import type { Prisma } from "@prisma/client"
 
 import { createFetchEntitiesAction } from "@/features/admin/actions/create-fetch-entities"
 import { UsersTable } from "@/features/admin/features/users/components/users-table"

@@ -1,7 +1,7 @@
 // src/features/admin/features/banners/data/get-banner-by-slug.ts
 import { unstable_cache } from "next/cache"
 
-import { Banner } from "@/lib/_generated/prisma"
+import { Banner } from "@prisma/client"
 import prisma from "@/lib/prisma"
 
 type GetBannerBySlugOptions = {

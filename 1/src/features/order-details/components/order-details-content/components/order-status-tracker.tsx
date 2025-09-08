@@ -7,7 +7,7 @@ import {
   TruckIcon,
 } from "lucide-react"
 
-import { DeliveryType, OrderStatus } from "@/lib/_generated/prisma"
+import { DeliveryType, OrderStatus } from "@prisma/client"
 import { cn, formatDate } from "@/lib/utils"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"

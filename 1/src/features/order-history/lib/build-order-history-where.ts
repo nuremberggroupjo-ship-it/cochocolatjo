@@ -1,4 +1,4 @@
-import type { Prisma } from "@/lib/_generated/prisma"
+import type { Prisma } from "@prisma/client"
 
 import type { AdminFetchActionOptions } from "@/features/admin/types"
 

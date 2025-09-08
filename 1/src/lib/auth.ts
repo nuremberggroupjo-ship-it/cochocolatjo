@@ -7,7 +7,7 @@ import { prismaAdapter } from "better-auth/adapters/prisma"
 import { createAuthMiddleware } from "better-auth/api"
 import { customSession, genericOAuth } from "better-auth/plugins"
 
-import { UserRole } from "@/lib/_generated/prisma"
+import { UserRole } from "@prisma/client"
 import { hashPassword, verifyPassword } from "@/lib/argon2"
 import { env } from "@/lib/env"
 import mergeCarts from "@/lib/helpers/merge-carts"

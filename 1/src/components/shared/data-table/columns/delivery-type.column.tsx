@@ -2,7 +2,7 @@
 
 import { ColumnDef } from "@tanstack/react-table"
 
-import { DeliveryType } from "@/lib/_generated/prisma"
+import { DeliveryType } from "@prisma/client"
 import { SHARED_ORDER_UTILS } from "@/lib/shared/order-utils"
 
 import { Badge } from "@/components/ui/badge"

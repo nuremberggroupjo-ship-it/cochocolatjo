@@ -1,6 +1,6 @@
 "use server"
 
-import { Prisma } from "@/lib/_generated/prisma"
+import { Prisma } from "@prisma/client"
 import prisma from "@/lib/prisma"
 
 /**

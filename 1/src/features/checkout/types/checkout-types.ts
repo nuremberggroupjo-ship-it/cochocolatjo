@@ -6,7 +6,7 @@ import {
   DeliveryType,
   OrderStatus,
   PaymentMethod,
-} from "@/lib/_generated/prisma"
+} from "@prisma/client"
 
 /**
  * Delivery type selection for checkout

@@ -1,7 +1,7 @@
 // src/features/admin/features/categories/data/get-category-by-slug.ts
 import { unstable_cache } from "next/cache"
 
-import { Category } from "@/lib/_generated/prisma"
+import { Category } from "@prisma/client"
 import prisma from "@/lib/prisma"
 
 type GetCategoryBySlugOptions = {

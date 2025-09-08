@@ -17,8 +17,9 @@ export const env = createEnv({
     UPLOADTHING_TOKEN: z.string().min(1),
     UPLOADTHING_SECRET_KEY: z.string().min(1),
     // Resend
-
+    RESEND_API_KEY: z.string().min(1),
     // Cron Job
+    CRON_SECRET: z.string().min(1)
   },
   client: {
     NEXT_PUBLIC_BASE_URL: z.string().min(1).url(),

@@ -18,7 +18,7 @@ export default async function SortProductsPage() {
   });
 
   // تحويل المنتجات لتضمين thumbnailImage
-  const transformedProducts = products.map(product => ({
+  const transformedProducts = products.map((product: typeof products[0]) => ({
     id: product.id,
     name: product.name,
     thumbnailImage:

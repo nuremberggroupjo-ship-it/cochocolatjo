@@ -4,7 +4,7 @@ import { type Dispatch, type SetStateAction } from "react"
 
 import { type ColumnDef } from "@tanstack/react-table"
 
-import { Category } from "@/lib/_generated/prisma"
+import { Category } from "@prisma/client"
 
 import {
   actionsColumn,

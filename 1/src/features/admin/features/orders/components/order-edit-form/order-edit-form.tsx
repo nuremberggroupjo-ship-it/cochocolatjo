@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form"
 
 import type { OrderAdminData } from "@/types/db"
 
-import { OrderStatus } from "@/lib/_generated/prisma"
+import { OrderStatus } from "@prisma/client"
 import { cn, formatDate } from "@/lib/utils"
 
 import { Button } from "@/components/ui/button"

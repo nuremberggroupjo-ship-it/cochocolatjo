@@ -1,7 +1,7 @@
 // src/features/admin/features/attributes/data/get-attribute-by-slug.ts
 import { unstable_cache } from "next/cache"
 
-import { Attribute } from "@/lib/_generated/prisma"
+import { Attribute } from "@prisma/client"
 import prisma from "@/lib/prisma"
 
 type GetAttributeBySlugOptions = {

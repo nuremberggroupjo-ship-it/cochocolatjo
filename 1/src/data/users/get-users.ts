@@ -4,7 +4,7 @@ import type { GetEntitiesOptions, GetEntitiesResult } from "@/types"
 import type { UserAdminData } from "@/types/db"
 import { getUserDataSelect } from "@/types/db"
 
-import type { Prisma, UserRole } from "@/lib/_generated/prisma"
+import type { Prisma, UserRole } from "@prisma/client"
 import { verifySession } from "@/lib/dal"
 import prisma from "@/lib/prisma"
 

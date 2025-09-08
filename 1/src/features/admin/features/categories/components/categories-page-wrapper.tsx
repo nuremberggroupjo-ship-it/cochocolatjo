@@ -4,7 +4,7 @@ import type { WithRequiredSearchParams } from "@/types"
 
 import { getCategoriesAdminWithCount } from "@/data"
 
-import type { Category, Prisma } from "@/lib/_generated/prisma"
+import type { Category, Prisma } from "@prisma/client"
 
 import {
   buildBasicWhere,

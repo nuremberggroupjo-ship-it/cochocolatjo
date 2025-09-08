@@ -5,7 +5,7 @@ import type { OrderTableData } from "@/types/db"
 
 import { getOrdersAdminWithCount } from "@/data"
 
-import type { Prisma } from "@/lib/_generated/prisma"
+import type { Prisma } from "@prisma/client"
 
 import { createFetchEntitiesAction } from "@/features/admin/actions/create-fetch-entities"
 import { OrdersTable } from "@/features/admin/features/orders/components/orders-table"

@@ -7,7 +7,7 @@ import { z } from "zod"
 
 import { getAttributeBySlugAdmin } from "@/data"
 
-import { Attribute } from "@/lib/_generated/prisma"
+import { Attribute } from "@prisma/client"
 import { verifySession } from "@/lib/dal"
 import prisma from "@/lib/prisma"
 import { actionClient } from "@/lib/safe-action"
