@@ -32,8 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",
-    "src/features/categories/[slug]",
-    ".next/types/**/*.ts"
+    "src/features/categories/[slug]"
+   
   ],
   "exclude": [
     "node_modules"
