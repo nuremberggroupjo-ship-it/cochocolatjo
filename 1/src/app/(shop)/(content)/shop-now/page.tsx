@@ -10,6 +10,9 @@ import { ProductsGridSkeleton } from "@/components/shared/skeletons/products-gri
 import { ProductsGridResult } from "@/features/shop-now/components/products-grid-result";
 
 interface ShopNowPageProps {
+  params: {
+      slug: string | string[];
+    };
   searchParams: {
     q?: string;
     page?: string;
@@ -21,6 +24,7 @@ interface ShopNowPageProps {
 
   };
 }
+
 
 export default async function ShopNowPage({ searchParams }: ShopNowPageProps) {
   // ❌ أزل await هنا.
