@@ -10,10 +10,10 @@ import { ProductsGridSkeleton } from "@/components/shared/skeletons/products-gri
 import { ProductsGridResult } from "@/features/shop-now/components/products-grid-result";
 
 interface ShopNowPageProps {
-  params: {
+  params: Promise<{
       slug: string | string[];
-    };
-  searchParams: {
+    }>;
+  searchParams: Promise<{
     q?: string;
     page?: string;
     category?: string | string[];
@@ -22,13 +22,14 @@ interface ShopNowPageProps {
     sale?: string | string[];
     unit?: string | string[];
 
-  };
+  }>;
 }
 
 
 export default async function ShopNowPage({ searchParams }: ShopNowPageProps) {
-  // ❌ أزل await هنا.
-  const { q, attribute, category, page, sort, sale,unit } = searchParams;
+  // ✅ Add await here since searchParams is now a Promise.
+  const resolvedSearchParams = await searchParams;
+  const { q, attribute, category, page, sort, sale,unit } = resolvedSearchParams;
   const currentPage = Number(page) || 1;
   const categories = toArray(category);
   const attributes = toArray(attribute);
@@ -62,9 +63,9 @@ export default async function ShopNowPage({ searchParams }: ShopNowPageProps) {
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: { q?: string };
+  searchParams: Promise<{ q?: string }>;
 }): Promise<Metadata> {
-  const { q } = searchParams;
+  const { q } = await searchParams;
 
   if (q) {
     const { generateDynamicMetadata, createMetadata } = await import(

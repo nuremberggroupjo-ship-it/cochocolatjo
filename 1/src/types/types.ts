@@ -1,10 +1,10 @@
 // app/(shop)/(content)/categories/[slug]/types.ts
 
 export interface ShopNowPageProps {
-    params: {
+    params: Promise<{
       slug: string | string[];
-    };
-    searchParams: {
+    }>;
+    searchParams: Promise<{
       q?: string;
       page?: string;
       category?: string | string[];
@@ -12,6 +12,6 @@ export interface ShopNowPageProps {
       sort?: string;
       sale?: string | string[];
       unit?: string | string[];
-    };
+    }>;
   }
   
