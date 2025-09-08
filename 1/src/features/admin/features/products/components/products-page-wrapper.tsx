@@ -5,7 +5,7 @@ import type { ProductData } from "@/types/db"
 
 import { getProductsAdminWithCount } from "@/data"
 
-import type { Prisma } from "@/lib/_generated/prisma"
+import type { Prisma } from "@prisma/client"
 import { convertToPlainObject } from "@/lib/utils"
 
 import {

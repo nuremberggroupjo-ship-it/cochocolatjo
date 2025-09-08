@@ -7,7 +7,7 @@ import { z } from "zod"
 
 import { getBannerBySlugAdmin } from "@/data"
 
-import { Banner } from "@/lib/_generated/prisma"
+import { Banner } from "@prisma/client"
 import { verifySession } from "@/lib/dal"
 import prisma from "@/lib/prisma"
 import { actionClient } from "@/lib/safe-action"

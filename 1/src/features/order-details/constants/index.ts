@@ -1,4 +1,4 @@
-import { DeliveryType, OrderStatus } from "@/lib/_generated/prisma"
+import { DeliveryType, OrderStatus } from "@prisma/client"
 
 import { FOOTER_ADDRESS } from "@/constants"
 

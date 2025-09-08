@@ -1,5 +1,5 @@
 // src/features/admin/actions/utils/build-where.util.ts
-import { Prisma } from "@/lib/_generated/prisma"
+import { Prisma } from "@prisma/client"
 
 import { AdminFetchActionOptions } from "@/features/admin/types"
 

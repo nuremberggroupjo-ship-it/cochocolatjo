@@ -5,7 +5,7 @@ import type { CustomerOrderData } from "@/types/db"
 
 import { getCustomerOrdersWithCount } from "@/data"
 
-import type { Prisma } from "@/lib/_generated/prisma"
+import type { Prisma } from "@prisma/client"
 
 import { createFetchEntitiesAction } from "@/features/admin/actions/create-fetch-entities/create-fetch-entities"
 import { searchParamsCache } from "@/features/admin/lib/search-params-cache"

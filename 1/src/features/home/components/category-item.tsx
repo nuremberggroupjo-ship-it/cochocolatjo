@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { FC } from "react"
 
-import { Category } from "@/lib/_generated/prisma"
+import { Category } from "@prisma/client"
 import { cn } from "@/lib/utils"
 
 export const CategoryItem: FC<Category> = ({ name, thumbnailImage, slug }) => {

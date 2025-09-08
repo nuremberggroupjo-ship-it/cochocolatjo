@@ -4,7 +4,7 @@ import type { GetEntitiesOptions, GetEntitiesResult } from "@/types"
 import type { OrderTableData } from "@/types/db"
 import { getOrderTableDataSelect } from "@/types/db"
 
-import type { Prisma } from "@/lib/_generated/prisma"
+import type { Prisma } from "@prisma/client"
 import { verifySession } from "@/lib/dal"
 import prisma from "@/lib/prisma"
 import { convertToPlainObject } from "@/lib/utils"

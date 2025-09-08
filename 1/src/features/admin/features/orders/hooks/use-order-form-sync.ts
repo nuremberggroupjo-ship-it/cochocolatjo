@@ -4,7 +4,7 @@ import { UseFormReturn } from "react-hook-form"
 
 import type { OrderAdminData } from "@/types/db"
 
-import { OrderStatus } from "@/lib/_generated/prisma"
+import { OrderStatus } from "@prisma/client"
 
 import type { SaveOrderSchema } from "@/features/admin/features/orders/lib/order.schema"
 

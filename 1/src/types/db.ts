@@ -1,4 +1,4 @@
-import { Prisma } from "@/lib/_generated/prisma"
+import { Prisma } from "@prisma/client"
 
 export function getProductDataSelect(
   loggedInUser?: string,

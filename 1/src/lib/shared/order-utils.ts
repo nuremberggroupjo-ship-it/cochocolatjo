@@ -2,7 +2,7 @@ import {
   DeliveryType,
   OrderStatus,
   PaymentMethod,
-} from "@/lib/_generated/prisma"
+} from "@prisma/client"
 
 /**
  * Shared order status options with display labels and colors

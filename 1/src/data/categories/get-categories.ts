@@ -3,7 +3,7 @@ import { unstable_cache } from "next/cache"
 
 import { GetEntitiesOptions, GetEntitiesResult } from "@/types"
 
-import { Category, Prisma } from "@/lib/_generated/prisma"
+import { Category, Prisma } from "@prisma/client"
 import prisma from "@/lib/prisma"
 
 import { REVALIDATE_TAGS } from "@/constants"

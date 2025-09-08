@@ -32,7 +32,7 @@ export async function GET(req: Request) {
 
     new UTApi().deleteFiles(
       unusedMedia.map(
-        (m) =>
+        (m: typeof unusedMedia[0]) =>
           m.imageUrl.split(
             `https://${env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/`,
           )[1],
@@ -42,7 +42,7 @@ export async function GET(req: Request) {
     await prisma.productImage.deleteMany({
       where: {
         id: {
-          in: unusedMedia.map((m) => m.id),
+          in: unusedMedia.map((m: typeof unusedMedia[0]) => m.id),
         },
       },
     })

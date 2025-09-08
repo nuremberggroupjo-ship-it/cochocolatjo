@@ -1,6 +1,6 @@
 import { z } from "zod"
 
-import { UserRole } from "@/lib/_generated/prisma"
+import { UserRole } from "@prisma/client"
 
 /**
  * Schema for updating user information (admin only)

@@ -2,7 +2,7 @@
 
 import { FC, use, useMemo, useState } from "react"
 
-import { Category } from "@/lib/_generated/prisma"
+import { Category } from "@prisma/client"
 
 import { DataTable } from "@/components/shared/data-table"
 import { DataTableDeleteAction } from "@/components/shared/data-table/components/data-table-delete-action"

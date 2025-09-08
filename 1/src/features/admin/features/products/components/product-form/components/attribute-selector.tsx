@@ -5,7 +5,7 @@ import { FC, useState } from "react"
 import { Check, ChevronsUpDown, X } from "lucide-react"
 import { ControllerRenderProps } from "react-hook-form"
 
-import { Attribute } from "@/lib/_generated/prisma"
+import { Attribute } from "@prisma/client"
 import { cn } from "@/lib/utils"
 
 import { Badge } from "@/components/ui/badge"

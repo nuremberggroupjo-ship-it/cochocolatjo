@@ -4,7 +4,7 @@ import type { WithRequiredSearchParams } from "@/types"
 
 import { getBannersAdminWithCount } from "@/data"
 
-import type { Banner, Prisma } from "@/lib/_generated/prisma"
+import type { Banner, Prisma } from "@prisma/client"
 
 import {
   buildBasicWhere,

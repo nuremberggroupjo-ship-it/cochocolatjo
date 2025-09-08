@@ -1,6 +1,6 @@
 import { z } from "zod"
 
-import { OrderStatus } from "@/lib/_generated/prisma"
+import { OrderStatus } from "@prisma/client"
 
 /**
  * Schema for editing order information

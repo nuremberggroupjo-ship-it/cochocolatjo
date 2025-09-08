@@ -8,7 +8,7 @@ import Autoplay from "embla-carousel-autoplay"
 // import Fade from "embla-carousel-fade"
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 
-import { Banner } from "@/lib/_generated/prisma"
+import { Banner } from "@prisma/client"
 import { cn } from "@/lib/utils"
 
 import { useCarousel } from "@/hooks/use-carousel"

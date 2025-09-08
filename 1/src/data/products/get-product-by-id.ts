@@ -2,7 +2,7 @@ import { unstable_cache } from "next/cache"
 
 import { ProductData, getProductDataSelect } from "@/types/db"
 
-import { Prisma } from "@/lib/_generated/prisma"
+import { Prisma } from "@prisma/client"
 import getCurrentSessionInfo from "@/lib/helpers/get-current-session-info"
 import prisma from "@/lib/prisma"
 

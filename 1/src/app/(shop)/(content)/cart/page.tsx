@@ -21,7 +21,7 @@ async function CartPageData({ currentPage }: { currentPage: number }) {
   // Convert Decimal types to numbers for the component
   const convertedData = {
     ...data,
-    items: data.items.map((item) => ({
+    items: data.items.map((item: typeof data.items[0]) => ({
       ...item,
       product: {
         ...item.product,

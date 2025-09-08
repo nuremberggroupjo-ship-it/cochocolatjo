@@ -1,0 +1,31 @@
+// Global type declarations for assets
+declare module "*.svg" {
+  import { FC, SVGProps } from "react"
+  const content: FC<SVGProps<SVGElement>>
+  export default content
+}
+
+declare module "*.png" {
+  const content: { src: string; height: number; width: number }
+  export default content
+}
+
+declare module "*.jpg" {
+  const content: { src: string; height: number; width: number }
+  export default content
+}
+
+declare module "*.jpeg" {
+  const content: { src: string; height: number; width: number }
+  export default content
+}
+
+declare module "*.webp" {
+  const content: { src: string; height: number; width: number }
+  export default content
+}
+
+declare module "*.gif" {
+  const content: { src: string; height: number; width: number }
+  export default content
+}

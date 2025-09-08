@@ -7,7 +7,7 @@ import type {
 } from "@/types";
 import { ProductData, getProductDataSelect } from "@/types/db";
 
-import { Prisma } from "@/lib/_generated/prisma";
+import { Prisma } from "@prisma/client";
 import getCurrentSessionInfo from "@/lib/helpers/get-current-session-info";
 import prisma from "@/lib/prisma";
 import { convertToPlainObject } from "@/lib/utils";
