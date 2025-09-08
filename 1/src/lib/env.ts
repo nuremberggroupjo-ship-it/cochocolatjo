@@ -19,6 +19,7 @@ export const env = createEnv({
     // Resend
 
     // Cron Job
+    CRON_SECRET: z.string().min(1),
   },
   client: {
     NEXT_PUBLIC_BASE_URL: z.string().min(1).url(),
